@@ -1,0 +1,24 @@
+<template>
+    
+    <lightning-card title="LIGHTNING RECORD FORM" icon-name="standard:avatar">
+        <div class="slds-var-m-around_medium">
+
+            <lightning-record-form
+                fields={fields}               
+                object-api-name={objectName}
+                record-id={recordId}                
+                onsuccess={successHandler}
+                onerror={errorHandler}>
+            </lightning-record-form>
+
+        </div>
+    </lightning-card>
+
+    <!-- 
+        mode="readonly" 
+        layout-type="Compact"
+        layout-type="Full"
+        columns="2"               
+        object-api-name={objectName}
+    -->
+</template>
